@@ -1,1 +1,244 @@
+@import url("https://use.typekit.net/kwh0nqd.css");
 
+/************************************
+Universal Box Sizing with Inheritance
+*************************************/
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div#cover-container-text h1,
+div#cover-container-text h2 {
+  font-family: uniwars, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+header {
+  padding: 20px;
+  font-size: 60px;
+  font-family: roc-grotesk-extrawide, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.subsubtitle {
+  font-size: 20px;
+  font-family: roc-grotesk-extrawide, sans-serif;
+  font-weight: 200;
+}
+
+
+/**************************
+Main Menu
+**************************/
+#mainmenu {
+  max-width: 100%;
+  background-color: #1b264f;
+  margin-bottom: 10px;
+}
+
+#mainmenu ul {
+  width: calc(100% - 100px);
+  padding: 10px 0px 10px 100px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+}
+
+#mainmenu li {
+  list-style-type: none;
+  padding: 10px 0px 10px 0px;
+  display: inline-block;
+}
+
+#mainmenu li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+#mainmenu img {
+  position: absolute;
+  top: 5px;
+  width: 140px;
+  height: 50px;
+  margin: 0px 20px;
+  z-index: 201;
+}
+
+#mainmenu label,
+#hamburger {
+  display: none;
+  position: absolute;
+}
+
+#mainmenu ul li:hover {
+  background-color: blue;
+}
+
+#mainmenu ul li:active {
+  background-color: aliceblue;
+}
+
+#mainmenu ul li #activelink {
+  background-color: aliceblue;
+  color: black;
+  cursor: default;
+}
+
+nav ul {
+  cursor: default;
+}
+
+#activelink:hover {
+  background-color: aliceblue;
+}
+
+/**
+ * Responsiveness of main menu
+*/
+@media screen and (max-width: 958px) {
+  #mainmenu {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 56px;
+  }
+
+  #mainmenu label,
+  #hamburger {
+    z-index: 201;
+  }
+
+  #mainmenu ul a {
+    display: block;
+    width: 100%;
+  }
+
+  #mainmenu img {
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    margin-left: 5px;
+  }
+
+  nav#mainmenu ul li:nth-child(1) {
+    margin-top: 50px;
+  }
+
+  #mainmenu label {
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  #mainmenu ul {
+    display: none;
+  }
+
+  #mainmenu input:checked~ul {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 0px 10px 0px;
+    background-color: #1b264f;
+    height: 500px;
+    z-index: 200;
+  }
+
+  #mainmenu input:checked~label {
+    height: 30px;
+  }
+
+  #mainmenu li {
+    list-style-type: none;
+    margin: 10px 0px 10px 0px;
+    padding: 0px;
+    display: inline-block;
+    width: 100%;
+  }
+
+  /**
+    * Responisve header
+  */
+  header {
+    padding: 20px;
+    font-size: 30px;
+    font-family: roc-grotesk-extrawide, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+
+}
+
+/**
+ * Responsive footer
+*/
+footer {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #f5f3f5;
+  margin-top: 10px;
+  bottom: 0;
+  clear: both;
+}
+
+footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+footer .social img {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 10px;
+  opacity: 0.85;
+}
+
+footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+footer .social a {
+  color: black;
+  text-decoration: none;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+footer .copyright {
+  margin: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: gray;
+}

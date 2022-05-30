@@ -1,0 +1,162 @@
+.subsubtitle {
+    font-size: 20px;
+    font-family: roc-grotesk-extrawide, sans-serif;
+    font-weight: 200;
+}
+
+/*-----------------------
+Secondary Menu
+-----------------------*/
+#secondary-menu {
+    font-family: roc-grotesk-extrawide, sans-serif;
+    background-color: #f5f3f5;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+
+#secondary-menu ul li {
+    padding: 5px;
+}
+
+#secondary-menu a {
+    text-decoration: none;
+    color: #302b27;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -120px;
+    visibility: hidden;
+}
+
+
+/*------------------------
+Venues page Article
+------------------------*/
+#venues article {
+    margin: 15px 10px;
+}
+
+#venues figure {
+    position: relative;
+}
+
+#venues img {
+    margin: 10px 0 10px 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#venues .stadium {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    border-radius: 3px;
+}
+
+#venues .stadium.italia {
+    background-color: #5a8b0b81;
+    margin: 10px 0 0 0;
+}
+
+#venues .stadium.america {
+    background-color: #5a57ff;
+    margin: 10px 0 0 0;
+}
+
+#venues .stadium.europa {
+    background-color: #1464e6;
+    margin: 10px 0 0 0;
+}
+
+#venues .stadium.cina {
+    background-color: #ca0909;
+    margin: 10px 0 0 0;
+}
+
+#venues .stadium.corea-del-sud {
+    background-color: #31c120;
+    margin: 10px 0 0 0;
+}
+
+#venues h2 {
+    color: #274690;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#venues p {
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/*--------------------------
+Responsiveness news page 
+--------------------------*/
+@media screen and (min-width: 784px) {
+    #secondary-menu ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #secondary-menu ul li {
+        display: inline-block;
+        padding: 5px;
+    }
+
+    a.anchor {
+        top: -30px;
+    }
+}
+
+/*--------------------------
+Responsiveness news page 
+--------------------------*/
+@media screen and (min-width: 1040px) {
+    main #venues img {
+        float: left;
+        width: 38%;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+
+    #venues section {
+        float: right;
+        width: 60%;
+    }
+
+    #news .stadium {
+        padding: 3px;
+    }
+
+    #secondary-menu ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #secondary-menu ul li {
+        display: inline-block;
+        padding: 5px;
+    }
+
+}

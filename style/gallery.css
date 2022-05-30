@@ -1,0 +1,30 @@
+main img{
+    width: 90%;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    display: grid;
+}
+
+@media screen and (min-width: 767px){
+    main img{
+        width: 45%;
+        margin: 0px;
+    }
+
+    main img:nth-child(odd){ 
+        margin-left: 30px;
+        float: left;
+        display: flex;
+        margin-bottom: 30px;
+    }
+    
+    main img:nth-child(even){
+        margin-right: 30px;
+        float: right;
+        display: flex;
+        margin-bottom: 30px;
+    }
+}

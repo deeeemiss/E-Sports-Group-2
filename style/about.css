@@ -1,0 +1,73 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*-------------------
+Page Content
+--------------------*/
+#container-text{
+    margin: 10px;
+}
+
+#informations-esports p, #story-esports p, #does-esports p{
+    background-color: beige;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+    line-height: 1.5em;
+}
+
+h2{
+    color:#274690;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#informations-esports img, #story-esports img, #does-esports img{
+    width: 100%;
+    border-radius: 20px;
+    margin: 20px 0 20px 0;
+}
+
+
+
+/*-------------------------
+Responsive page content
+-------------------------*/
+@media screen and (min-width: 768px){
+    #informations-esports img, #story-esports img, #does-esports img{
+        width: 38%;
+    }
+
+    .float{
+        float: left;
+    }
+
+    .right{
+        float: right;
+    }
+
+    .float:not(img), .right:not(img){
+        width: 60%;
+    }
+
+    .clear{
+        clear: both;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    #informations-esports img, #story-esports img, #does-esports img{
+        width: 30%;
+    }
+    .float:not(img), .right:not(img){
+        width: 68%;
+    }
+}

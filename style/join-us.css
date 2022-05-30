@@ -1,0 +1,182 @@
+@import url("https://use.typekit.net/kwh0nqd.css");
+
+/********************
+Page Content
+********************/
+
+
+/*animation*/
+/*
+a.title {
+  color: #576ca8;
+  letter-spacing: -3px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: roc-grotesk-extrawide, sans-serif;
+  font-weight: 400;
+  animation: 3s blinker linear infinite;
+  -webkit-animation: 3s blinker linear infinite;
+  -moz-animation: 3s blinker linear infinite;
+  text-decoration: none;
+}
+
+@-moz-keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}*/
+
+/*end animation*/
+
+form {
+  border: 2px solid #576ca8;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 10px 0;
+  font-size: 1.2em;
+}
+
+form label,
+input,
+span.form-part {
+  display: inline-block;
+  width: 110px;
+  margin: 10px;
+  text-align: center;
+}
+
+form label {
+  color: #576ca8;
+  font-size: 15px;
+}
+
+form #input-join-us {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+form #nationality, form #eyeColor, form #hairColor, form .desired-tournaments{
+  display: inline-block;
+  width: 140px;
+  margin: 10px;
+}
+
+form.select-games{
+  display: inline-block;
+  width: 140px;
+  margin: 10px;
+}
+
+fieldset {
+  margin: 10px 20px 20px 20px;
+  border-radius: 5px;
+}
+
+
+
+legend.form-part {
+  margin-left: 10px;
+  padding: 0 3px;
+}
+
+.form-part,
+li fieldset label {
+  color: #576ca8;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.textarea-biography{
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+  resize: none;
+}
+
+.textarea-biography,
+.form-biography{
+  vertical-align: middle;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+/*****************
+Responsive page content
+*****************/
+@media screen and (min-width: 768px) {
+  /*a.title {
+    color: #576ca8;
+    letter-spacing: -3px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: roc-grotesk-extrawide, sans-serif;
+    font-weight: 400;
+  }*/
+
+  form {
+    border: 2px solid #576ca8;
+    border-radius: 20px;
+    width: 400px;
+    margin-top: 20px;
+    padding: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  form label,
+  input {
+    display: inline-block;
+    width: 140px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  form label {
+    color: #576ca8;
+    font-size: 13px;
+  }
+
+  form #input-join-us {
+    font-size: 13px;
+  }
+}

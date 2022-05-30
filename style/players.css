@@ -1,0 +1,284 @@
+/**
+* players.css
+*
+* Style for the players.html page. Players are disposed in a list of cards
+* for mobile devices, and for larger devices, the cards wrap in the screen width  
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+ * Style for the secondary navigation
+*/
+input {
+  display: none;
+}
+
+#secondary-menu {
+  font-family: roc-grotesk-extrawide, sans-serif;
+}
+
+span.sec-menu {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+#secondary-menu {
+  background-color: #f5f3f5;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#secondary-menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#secondary-menu ul li {
+  display: inline-block;
+  padding: 5px;
+}
+
+#secondary-menu img {
+  max-width: 35px;
+  max-height: 35px;
+  cursor: pointer;
+}
+
+#active-players:checked~main figure:not(.active) {
+  display: none;
+}
+
+#retired-players:checked~main figure:not(.retired) {
+  display: none;
+}
+
+#all-players:checked~main figure {
+  display: block;
+}
+
+#active-players:checked~#secondary-menu ul.player-status li:not(.active-status) {
+  opacity: 0.2;
+}
+
+#retired-players:checked~#secondary-menu ul.player-status li:not(.retired-status) {
+  opacity: 0.2;
+}
+
+#all-players:checked~#secondary-menu ul.player-status li:not(.all-status) {
+  opacity: initial;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -180px;
+  visibility: hidden;
+}
+
+a.anchor#faze {
+  top: -70px;
+}
+
+a.anchor#astralis {
+  top: -100px;
+}
+
+a.anchor#team-liquid,
+a.anchor#virtus-pro,
+a.anchor#natus-vincere {
+  top: -90px;
+}
+
+a.anchor#fnatic,
+a.anchor#evil-geniuses {
+  top: -60px;
+}
+
+
+/*
+ * Style for players cards
+*/
+.player {
+  position: relative;
+  overflow: hidden;
+  margin: 10px auto;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #f5f3f5;
+  line-height: 1.4em;
+  background-color: #302B27;
+  border-radius: 5px;
+}
+
+.player h2 {
+  font-size: larger;
+  padding-bottom: 10px;
+}
+
+.player .retired {
+  color: #576CA8;
+}
+
+.player img {
+  width: 100%;
+}
+
+.player figcaption {
+  background-color: #302B27;
+  padding: 15px;
+  position: relative;
+}
+
+.player figcaption:before {
+  position: absolute;
+  content: '';
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 0 0 400px;
+  border-color: transparent transparent transparent #302B27;
+}
+
+.player ul {
+  padding: 10px 0;
+}
+
+.player .profile {
+  position: absolute;
+  bottom: 100%;
+  left: 25px;
+  max-width: 70px;
+}
+
+.player .tournaments {
+  display: flex;
+  flex-direction: column;
+}
+
+.player .tournaments a {
+  padding-top: 10px;
+  color: #f5f3f5;
+}
+
+/**
+ * Style for team informations
+*/
+.information {
+  position: relative;
+  background-color: #302B27;
+  color: #f5f3f5;
+  margin: 100px 40px 20px 40px;
+  border-radius: 10px;
+}
+
+.information .logo {
+  position: absolute;
+  top: -70px;
+  left: 10px;
+  max-width: 130px;
+}
+
+.information .logo[src="img/players/logo-faze.webp"] {
+  top: -30px;
+  left: -10px;
+}
+
+.information .logo[src="img/players/logo-astralis.webp"] {
+  top: -85px;
+}
+
+.information .logo[src="img/players/logo-fnatic.webp"] {
+  top: -35px;
+  left: 15px;
+}
+
+.information .logo[src="img/players/logo-color-evil-geniuses.png"] {
+  top: -60px;
+  left: 0px;
+}
+
+
+.information .title {
+  position: absolute;
+  font-family: roc-grotesk-extrawide, sans-serif;
+  font-size: 25px;
+  right: 25px;
+  top: 25px;
+}
+
+.information img[src="img/players/logo-black-team-liquid.webp"]~span,
+.information img[src="img/players/logo-virtuspro.webp"]~span,
+.information img[src="img/players/logo-natusvincere.webp"]~span,
+.information img[src="img/players/logo-color-evil-geniuses.png"]~span {
+  font-size: large;
+  right: 15px;
+}
+
+.information p {
+  padding: 70px 15px 20px 15px;
+  font-size: large;
+  line-height: 25px;
+}
+
+/*
+ * Scroll to top button
+*/
+.to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 10px;
+  z-index: 1;
+}
+
+.to-top img {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/**
+ * Responsiveness
+*/
+@media screen and (min-width: 768px) {
+
+  #secondary-menu ul,
+  #secondary-menu span {
+    width: 50%;
+  }
+
+  .player {
+    margin: 10px;
+  }
+
+  .player-status {
+    padding: 5px;
+  }
+
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main div.information span.title {
+    left: 150px;
+    font-size: 25px;
+  }
+
+  .to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 1;
+  }
+
+}

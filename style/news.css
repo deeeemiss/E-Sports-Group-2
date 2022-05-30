@@ -1,0 +1,173 @@
+/**
+* news.css
+*
+* Style for the news.html page
+*/
+
+/*
+ * Style for header and secondary navigation
+*/
+input {
+    visibility: hidden;
+}
+
+span.sec-menu {
+    display: block;
+    font-family: roc-grotesk-extrawide, sans-serif;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#secondary-menu ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#secondary-menu ul li {
+    display: inline-block;
+}
+
+#secondary-menu img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+#fortnite:checked ~ nav ul li:not(.fortnite) img {
+    opacity: 0.2;
+}
+
+#fortnite:checked ~ main #news article:not(.fortnite) {
+    display: none;
+}
+
+#lol:checked ~ nav ul li:not(.lol) img {
+    opacity: 0.2;
+}
+
+#lol:checked ~ main #news article:not(.league-of-legends) {
+    display: none;
+}
+
+#rocket-league:checked ~ nav ul li:not(.rl) img {
+    opacity: 0.2;
+}
+
+#rocket-league:checked ~ main #news article:not(.rocket-league) {
+    display: none;
+}
+
+#valorant:checked ~ nav ul li:not(.valorant) img {
+    opacity: 0.2;
+}
+
+#valorant:checked ~ main #news article:not(.valorant) {
+    display: none;
+}
+
+#reset:checked ~ nav ul li img {
+    opacity: initial;
+}
+
+#reset:checked ~ main #news article:not(.valorant) {
+    display: inline-block;
+}
+
+/*
+ * Style for the articles
+*/
+#news article {
+    margin: 15px 10px;
+}
+
+#news figure {
+    position: relative;
+}
+
+#news img {
+    margin-bottom: 10px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#news .game {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    border-radius: 3px;
+}
+
+#news .game.rocket-league {
+    background-color: #5a57ff;
+}
+
+#news .game.league-of-legends {
+    background-color: #1464e6;
+}
+
+#news .game.fortnite {
+    background-color: #ca0909;
+}
+
+#news .game.valorant {
+    background-color: #31c120;
+}
+
+#news h2 {
+    color: #274690;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#news p {
+    font-size: 20px;
+    line-height: 1.3em;
+    margin-bottom: 10px;
+    
+}
+
+#news a {
+    color: #576ca8;
+    font-weight: bold;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+/**
+ * Responsiveness news page 
+*/
+@media screen and (min-width: 768px) {
+    main #news img {
+        float: left;
+        width: 38%;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+
+    #news section {
+        float: right;
+        width: 60%;
+    }
+
+    #news .game {
+        padding: 3px;
+    }
+
+    #secondary-menu ul {
+        width: 25%;
+    }
+
+}

@@ -1,0 +1,545 @@
+/*------------------------
+Read More
+------------------------*/
+#link-news,
+#link-tournaments,
+#link-team,
+#link-join-us {
+  width: 200px;
+}
+
+#link-join-us:hover{
+  cursor: pointer;
+}
+
+a#link-news,
+a#link-tournaments,
+a#link-team,
+a#link-join-us {
+  text-decoration: none;
+}
+
+
+.readMore {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #274690;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+}
+
+.readMore a {
+  color: white;
+}
+
+.readMore:hover{
+  cursor:pointer;
+}
+
+/************************
+cover
+************************/
+.cover {
+  background-image: url("../img/home/esports-arena.jpg");
+  margin-top: -10px;
+  height: 200px;
+  background-size: cover;
+  position: relative;
+
+}
+
+#cover-filter {
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.7;
+}
+
+.cover-container {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+
+}
+
+#cover-container-text {
+  display: table-cell;
+  position: relative;
+  top: 20px;
+  text-align: center;
+  color: white;
+}
+
+#cover-container-text h1, #cover-container-text h2{
+  padding: 10px;
+  background: linear-gradient(to left,#43ff49,#19fc5d,#21f8b0, #43b1ff,#213af8,#5e30f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#cover-container-text h1{
+  font-size: 30px;
+}
+
+#cover-container-text h2{
+  font-size: 20px;
+}
+
+/***********************
+Introduction
+***********************/
+.introduction-text {
+  margin: auto;
+  margin: -50px 15px 15px 15px;
+  background: white;
+  padding: 5px;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #1b264f;
+}
+
+.introduction-text h3,
+.introduction-text h4 {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0 15px 0;
+}
+
+.introduction-text p {
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#news-article .introduction-text,
+#tournaments-article .introduction-text,
+#team-article .introduction-text {
+  margin: 0 10px 10px 10px;
+  z-index: 0;
+}
+
+/*-----------------------
+Secondary Menu
+-----------------------*/
+#secondary-menu {
+  font-family: roc-grotesk-extrawide, sans-serif;
+  background-color: #f5f3f5;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+#secondary-menu a{
+  text-decoration: none;
+  color: #274690
+}
+
+#secondary-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#secondary-menu ul li {
+  display: inline-block;
+  padding: 5px;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -105px;
+  visibility: hidden;
+}
+
+/************************
+Card
+************************/
+#news-article,
+#tournaments-article,
+#team-article {
+  margin: 20px 10px 30px 10px;
+  /* top - right - bottom - left */
+  position: relative;
+}
+
+#image-rocket-league,
+#image-fortnite,
+#image-league-of-legend,
+#image-valorant,
+#image-logo-faze {
+  border-radius: 30px;
+  width: 100%;
+  padding: 15px;
+  transition: 0.5s;
+}
+
+.card-container {
+  background: linear-gradient(#576ca8, #32a838);
+  border-radius: 20px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.card-container h2 {
+  color: #302b27;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-text p {
+  color: #ffffff;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 1.5em;
+  bottom: 15px;
+  width: 100%;
+}
+
+.title-tournaments {
+  color: #20d660;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.title-tournaments~li {
+  line-height: 1.5em;
+}
+
+.clear {
+  clear: both;
+}
+
+/*------------------------
+Tournaments Card
+------------------------*/
+.second-info {
+  color: #f5f3f5;
+  background-color: #1b264f;
+  display: flex;
+  justify-content: space-around;
+  padding: 7px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.second-info .location img {
+  width: 15px;
+  height: 15px;
+}
+
+/*------------------------
+Team Card
+------------------------*/
+#team-article .card-text h4 {
+  color: white;
+  font-size: 25px;
+  margin: 0 0 10px 0;
+  padding: 10px;
+
+}
+
+#team-article .card-text ul {
+  color: white;
+  columns: 2;
+  background-color: #1b264f;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px 0 0 0;
+
+}
+
+#team-article .card-text li {
+  margin: 0 0 0 5px;
+  font-size: 15px;
+}
+
+/*-------------------------
+Join Us Card CTA
+-------------------------*/
+#join-us-article {
+  background-image: url("../img/gallery/F1-Esports-Pro-Series-2019.jpg");
+  height: 200px;
+  background-size: cover;
+  position: relative;
+}
+
+#join-us-article-filter {
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.join-us-article-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+
+}
+
+#join-us-article-text {
+  position: relative;
+  top: 80px;
+  text-align: center;
+  color: white;
+}
+
+#join-us-article-text p {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+
+/***************************
+Media Tablet
+****************************/
+@media screen and (min-width: 476px) {
+
+  /************************
+  cover
+  ************************/
+  .cover {
+    height: 300px;
+  }
+
+  #cover-container-text {
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+  }
+
+  /***********************
+  Introduction
+  ***********************/
+  .introduction-text {
+    margin: -70px 15px 15px 15px;
+  }
+
+  /*----------------------
+  Secondary Menu
+  ----------------------*/
+  #secondary-menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #secondary-menu ul li {
+    display: inline-block;
+    padding: 5px;
+  }
+
+  /*----------------------
+  Card
+  ----------------------*/
+  #image-rocket-league,
+  #image-fortnite,
+  #image-league-of-legend,
+  #image-valorant,
+  #image-logo-faze {
+    border-radius: 30px;
+    width: 80%;
+    padding: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-container:hover #image-rocket-league,
+  .card-container:hover #image-fortnite,
+  .card-container:hover #image-league-of-legend,
+  .card-container:hover #image-valorant,
+  .card-container:hover #image-logo-faze {
+    width: 90%;
+    transition: 0.5s;
+  }
+
+  .card-container {
+    background-color: #5449cd;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .card-text h2 {
+    color: #780000;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  .card-text p {
+    color: #ffffff;
+    padding: 10px;
+    font-size: 20px;
+    bottom: 15px;
+    width: 100%;
+  }
+
+  /*-------------------------
+  Join Us Card CTA
+  -------------------------*/
+  #join-us-article {
+    height: 300px;
+  }
+
+  #join-us-article-text {
+    top: 120px;
+  }
+
+
+}
+
+/*----------------------
+Desktop
+----------------------*/
+@media screen and (min-width: 1084px) {
+
+  /*----------------------
+  cover
+  ----------------------*/
+  .cover {
+    height: 500px;
+  }
+
+  #cover-container-text {
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+  }
+
+  #cover-container-text h1 {
+    font-size: 50px;
+  }
+
+  #cover-container-text h2 {
+    font-size: 35px;
+  }
+
+  /*------------------------------
+  Secondary Menu
+  ------------------------------*/
+  
+
+
+  /***********************
+  Introduction
+  ***********************/
+  .introduction-text {
+    margin: -100px 15px 15px 15px;
+  }
+
+  .introduction-text h3,
+  .introduction-text h4 {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0 15px 0;
+  }
+
+  .introduction-text p {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /************************
+  Card
+  ************************/
+  .section-cards {
+    margin: 30px 10px 30px 10px;
+    /* top - right - bottom - left */
+    position: relative;
+  }
+
+  #image-rocket-league,
+  #image-fortnite,
+  #image-league-of-legend,
+  #image-valorant,
+  #image-logo-faze {
+    border-radius: 30px;
+    width: 30%;
+    margin: 0;
+    text-align: center;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-container:hover #image-rocket-league,
+  .card-container:hover #image-fortnite,
+  .card-container:hover #image-league-of-legend,
+  .card-container:hover #image-valorant,
+  .card-container:hover #image-logo-faze {
+    width: 40%;
+    transition: 0.5s;
+  }
+
+  .card-container {
+    background-color: #5449cd;
+    border-radius: 20px;
+    width: 100%;
+  }
+
+  .card-text h2 {
+    color: #780000;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .card-text p {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+
+  /*-------------------------
+  Join Us Card CTA
+  -------------------------*/
+  #join-us-article {
+    height: 500px;
+  }
+
+  #join-us-article-text {
+    top: 250px;
+  }
+
+
+}
