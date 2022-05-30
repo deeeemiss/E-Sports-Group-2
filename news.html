@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Trabbia, Galantino, Demichelis, Brustolon">
+  <meta name="description" content="Discover the latest news about videogames">
+  <title>Esport league - News</title>
+  <link rel="stylesheet" href="style/reset.css" />
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/news.css" />
+  <link rel="icon" href="img/logo-img.svg" type="image/x-icon" />
+</head>
+
+<body>
+  <!--start of page-->
+
+  <!--main menu-->
+  <nav id="mainmenu">
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger" />
+
+    <a href="./index.html">
+      <span></span>
+      <img src="img/logo/default-monochrome.svg" alt="esport league logo" />
+    </a>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="#" id="activelink">News</a></li>
+      <li><a href="./tournaments.html">Tournaments</a></li>
+      <li><a href="./players.html">Players</a></li>
+      <li><a href="./join-us.html">Join Us</a></li>
+      <li><a href="./gallery.html">Gallery</a></li>
+      <li><a href="./venues.html">Venues</a></li>
+      <li><a href="./about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!--Title and subtitle-->
+  <header>
+    <h1 id="newstitle">
+      <span>News</span><br>
+      <span class="subsubtitle">stay updated on the latest esport news</span>
+    </h1>
+  </header>
+
+  <!--secondary menu-->
+
+  <input type="radio" id="fortnite" name="game-news" />
+  <input type="radio" id="lol" name="game-news" />
+  <input type="radio" id="valorant" name="game-news" />
+  <input type="radio" id="rocket-league" name="game-news" />
+  <input type="radio" id="reset" name="game-news" />
+
+  <nav id="secondary-menu">
+    <span class="sec-menu">Filter by game:</span>
+    <ul>
+      <!--filters for the page-->
+      <li class="fortnite">
+        <label for="fortnite">
+          <img src="img/news/fortnite-icon.png" alt="fortnite icon">
+        </label>
+      </li>
+      <li class="lol">
+        <label for="lol">
+          <img src="img/news/lol-icon.png" alt="LoL icon">
+        </label>
+      </li>
+      <li class="rl">
+        <label for="rocket-league">
+          <img src="img/news/rl-icon.png" alt="rocket league icon">
+        </label>
+      </li>
+      <li class="valorant">
+        <label for="valorant">
+          <img src="img/news/valorant-icon.png" alt="valorant icon">
+        </label>
+      </li>
+      <li class="all-games">
+        <label for="reset">
+          <img src="img/news/all-games.png" alt="games icon">
+        </label>
+      </li>
+    </ul>
+  </nav>
+
+  <!--page content-->
+
+  <!--start of news-->
+
+  <main>
+    <div id="news">
+
+      <article class="rocket-league">
+        <figure>
+          <img src="img/news/rlLCQ.webp" alt="rocket league final Last Chance Qualifiers" />
+          <figcaption class="game rocket-league">ROCKET LEAGUE</figcaption>
+        </figure>
+        <section>
+          <h2>Rocket League - CRL WORLD CHAMPIONSHIP PRIMER</h2>
+          <p>
+            With the final Last Chance Qualifiers (LCQ) wrapped up, we've got
+            all 16 teams qualified to compete in the CRL World Championship from
+            June 3-5, for their share of the $75,000 in scholastic awards as
+            well as the title of CRL World Champion!
+            <br />
+            There's a lot to go over, so let's dive right into it!
+          </p>
+          <span class="read-more">
+            <a href="https://esports.rocketleague.com/news/crl-world-championship-primer/" target="_blank">Read more</a>
+          </span>
+        </section>
+
+        <div class="clear"></div>
+        <hr />
+
+      </article>
+
+      <article class="league-of-legends">
+        <figure>
+          <img src="img/news/lol_honor5.webp" alt="League of Legends honor 5 emblem" />
+          <figcaption class="game league-of-legends">LEAGUE OF LEGENDS</figcaption>
+        </figure>
+        <section>
+          <h2>
+            Riot reveals League exclusive recall for players who reach Honor 5
+          </h2>
+          <p>
+            Earlier this year, the Riot devs unveiled they wanted to make the
+            behavioral system in League of Legends "matter more" by building
+            solutions that "directly impact" the players, like giving out
+            rewards based on the honor system.
+            <br />
+            One of the rewards that is set to be given out to honorable players
+            is a special recall animation. The video of this new animation was
+            shared today on Twitter by Kristy Doan, a VFX artist for League, who
+            also hinted at a possible new Challenger recall.
+          </p>
+          <span class="read-more">
+            <a href="https://dotesports.com/league-of-legends/news/riot-reveals-league-exclusive-recall-for-players-who-reach-honor-5"
+              target="_blank">Read more</a>
+          </span>
+        </section>
+
+        <div class="clear"></div>
+        <hr />
+
+      </article>
+
+      <article class="fortnite">
+        <figure>
+          <img src="img/news/Fortnite-No-Build.webp" alt="Fortnite no build" />
+          <figcaption class="game fortnite">FORTNITE</figcaption>
+        </figure>
+        <section>
+          <h2>
+            Fortnite no build tournament - first build free tournament in-game
+          </h2>
+          <p>
+            Fortnite Chapter 3 Season 2 has launched in the game recently,
+            bringing the usual wave of new additions to the game. However, one
+            big change came with the new season, Epic vaulted building. Building
+            has been removed from the game, at least temporarily. Building is
+            definitely going to make a return to the game, but for now, Fortnite
+            is playing like any other shooter.
+            <br />
+            While the builds are still active in the competitive mode of the
+            game, we've gotten our first Fortnite no build tournament.
+          </p>
+          <span class="read-more">
+            <a href="https://www.esports.net/news/fortnite-no-build-tournament-first-build-free-tournament/"
+              target="_blank">Read more</a>
+          </span>
+        </section>
+
+        <div class="clear"></div>
+        <hr />
+
+      </article>
+
+      <article class="valorant">
+        <figure>
+          <img src="img/news/valorant-agent.webp" alt="Valorant agents" />
+          <figcaption class="game valorant">VALORANT</figcaption>
+        </figure>
+        <section>
+          <h2>VALORANT blog teases newest agent</h2>
+          <p>
+            In the State of the Agents blog posted by Riot Games, they talked a
+            little about the upcoming agent. One of the key factors that was
+            discussed was the agent revolving around gathering information,
+            alongside 'hunting down enemies'. "This next Agent should give you a
+            more... intimate feeling when hunting down enemies. Of course, there
+            is our theme-but the thought of giving away too much frightens me so
+            I'll leave that out."
+          </p>
+          <span class="read-more">
+            <a href="https://www.esports.com/en/valorant-blog-teases-newest-agent-339339" target="_blank">Read more</a>
+          </span>
+        </section>
+
+        <div class="clear"></div>
+        <hr />
+
+      </article>
+
+      <article class="rocket-league">
+        <figure>
+          <img src="img/news/rlcs.webp" alt="Rocket league championship spring 2022" />
+          <span class="game rocket-league">ROCKET LEAGUE</span>
+        </figure>
+        <section>
+          <h2>Setting goals and expectations before RLCS 2022 SPRING: NA REGIONAL 3</h2>
+          <p>
+            In just 10 days, we go back to another Rocket League packed weekend.
+            The RLCS 2021-22 Spring NA Regional Event 3 will be the final round
+            for North America's biggest teams to earn those coveted Circuit Points.
+            <br />
+            NA's Rocket League scene has proven its dominance over its
+            European counterparts after four NA teams placed top five at
+            RLCS Winter Major 2022. G2 Esports, Spacestation Gaming,
+            FaZe Clan, and Version1 are looking dominant this season.
+            One final regional event will secure all of them a spot at
+            the next Major. NRG and Envy are in this mix as well.
+
+          </p>
+          <span class="read-more">
+            <a href="https://www.esports.net/news/setting-expectations-rlcs-spring-na-regional-event-3/"
+              target="_blank">Read more</a>
+          </span>
+        </section>
+
+        <div class="clear"></div>
+        <hr />
+
+      </article>
+
+
+      <article class="fortnite">
+        <figure>
+          <img src="img/news/fortnite-llama.webp" alt="fortnite llama" />
+          <span class="game fortnite">FORTNITE</span>
+        </figure>
+        <section>
+          <h2>How to sign up for PlayStation and Fortnite Supply Llama</h2>
+          <p>
+            Fortnite has become its own platform to celebrate gaming and
+            the devices that make it possible. Epic Games always introduces
+            a new collaboration with consoles and other major gaming
+            franchises. Now, Fortnite is again partnering with PlayStation
+            to give players the ability to earn rewards through their Epic
+            Games and PlayStation Network accounts.
+            <br />
+            The current campaign is called The Supply Llama Challenge
+            and can reward players with new cosmetics. To qualify for
+            this new challenge, players will need to sign up with their
+            PlayStation account and Epic Games account by visiting the
+            <a href="https://fortnite.playstation.com/" target="_blank">official link</a>.
+
+          </p>
+          <span class="read-more">
+            <a href="https://dotesports.com/fortnite/news/how-to-sign-up-for-playstation-and-fortnite-supply-llama"
+              target="_blank">Read more</a>
+          </span>
+        </section>
+
+        <div class="clear"></div>
+        <hr />
+
+      </article>
+
+      <article class="league-of-legends">
+        <figure>
+          <img src="img/news/lol.webp" alt="league of legends" />
+          <span class="game league-of-legends">LEAGUE OF LEGENDS</span>
+        </figure>
+        <section>
+          <h2>League of Legends patch 12.10 notes</h2>
+          <p>
+            League of Legends patch 12.10 is going to change the game forever.
+            The so-called "durability update" is the biggest in history,
+            with every champion and almost every item in the game affected
+            as Riot fixes major issues with the game's pace: here's the full patch notes.
+            <br />
+            League of Legends patch 12.10 is arguably the largest update of the year
+            - even bigger than all the preseason changes that came along in the off-season.
+          </p>
+          <span class="read-more">
+            <a href="https://www.dexerto.com/league-of-legends/lol-patch-12-10-notes-1826496/" target="_blank">Read
+              more</a>
+          </span>
+        </section>
+
+        <div class="clear"></div>
+        <hr />
+
+      </article>
+
+      <article class="valorant">
+        <figure>
+          <img src="img/news/valorant-night-market.webp" alt="valorant night market" />
+          <span class="game valorant">VALORANT</span>
+        </figure>
+        <section>
+          <h2>Valorant Episode 4 Act 3 Night Market</h2>
+          <p>
+            Riot Games is ready to drop another iteration of Valorant Night Market
+            in the next few hours. The Episode 4 Act 3 Night Market will go
+            live in the game tomorrow, and players are already excited to grab
+            the opportunity to purchase their beloved weapon skins and cosmetics
+            at a discounted price.
+            <br />
+            The developers introduced several weapon skins and cosmetics to make
+            the game more attractive and colorful. With every new update in the game,
+            the developers develop new weapon skin bundles in the game.
+          </p>
+          <span class="read-more">
+            <a href="https://www.sportskeeda.com/valorant/valorant-episode-4-act-3-night-market-how-work?ref=valorantpage"
+              target="_blank">Read more</a>
+          </span>
+        </section>
+
+        <div class="clear"></div>
+        <hr />
+
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social">
+      <a href="https://it-it.facebook.com/its.ictpiemonte/" target="_blank">
+        <img src="img/facebook.svg" alt="facebook" title="Facebook ITS ICT Piemonte" />
+      </a>
+      <a href="https://www.instagram.com/its_ict_pie/" target="_blank">
+        <img src="img/instagram.svg " alt="instagram" title="Instagram ITS ICT Piemonte" />
+      </a>
+      <a href="https://www.youtube.com/channel/UCKv0byOTHfBYrIxRSuA1Zag" target="_blank">
+        <img src="img/youtube.svg" alt="youtube" title="Youtube ITS ICT Piemonte" />
+      </a>
+    </div>
+
+    <p class="copyright">&copy; 2022 ITS ICT Piemonte<br><br>Brustolon - Demichelis - Galantino - Trabbia</p>
+  </footer>
+
+  <!--end of body-->
+</body>
+
+</html>

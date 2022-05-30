@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Trabbia, Galantino, Demichelis, Brustolon">
+    <meta name="description" content="Find out the tournaments that Esport league has in program">
+    <title>Esport league - Tournaments</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/tournaments.css">
+    <link rel="icon" href="img/logo-img.svg" type="image/x-icon">
+</head>
+
+<body>
+    <!--start of page-->
+
+    <!--main menu-->
+    <nav id="mainmenu">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger" />
+
+        <a href="./index.html">
+            <span></span>
+            <img src="img/logo/default-monochrome.svg" alt="esport league logo">
+        </a>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./news.html">News</a></li>
+            <li><a href="#" id="activelink">Tournaments</a></li>
+            <li><a href="./players.html">Players</a></li>
+            <li><a href="./join-us.html">Join Us</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./venues.html">Venues</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!--header of the page-->
+    <header>
+        <h1>Tournaments <br />
+            <span class="subsubtitle">Check out our tournaments here!</span>
+        </h1>
+    </header>
+
+    <!--secondary menu-->
+    <input type="radio" id="past" name="tournament-period" />
+    <input type="radio" id="current" name="tournament-period" />
+    <input type="radio" id="future" name="tournament-period" />
+    <input type="radio" id="all" name="tournament-period" />
+
+    <input type="checkbox" id="collapse-team">
+
+    <nav id="secondary-menu">
+        <ul class="period">
+            <li class="past-menu">
+                <label for="past">
+                    Past
+                </label>
+            </li>
+            <li class="current-menu">
+                <label for="current">
+                    Current
+                </label>
+            </li>
+            <li class="future-menu">
+                <label for="future">
+                    Future
+                </label>
+            </li>
+            <li class="all-menu">
+                <label for="all">
+                    All
+                </label>
+            </li>
+        </ul>
+
+        <!--anchors to this page-->
+        <div class="games">
+            <span class="tournament-game">Game:</span>
+            <ul>
+                <li>
+                    <a href="#valorant-tournament">
+                        <img src="img/news/valorant-icon.png" alt="Valorant icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#lol-tournament">
+                        <img src="img/news/lol-icon.png" alt="League of Legends icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#fortnite-tournament">
+                        <img src="img/news/fortnite-icon.png" alt="Fortnite icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#rl-tournament">
+                        <img src="img/news/rl-icon.png" alt="Rocket League icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="all-teams">
+            <label for="collapse-team">
+                <span class="hide">
+                    Hide
+                </span>
+                <span class="show">
+                    Show
+                </span>
+                <span class="details">
+                    all teams
+                </span>
+            </label>
+        </div>
+
+    </nav>
+
+
+
+
+    <!--page content-->
+
+    <main>
+
+        <!-- sections of valorant tournaments-->
+        <a class="anchor" id="valorant-tournament"></a>
+
+        <!--tournament valorant 1-->
+        <a class="anchor" id="valorant-spring-cup"></a>
+
+        <section class="current valorant">
+            <article>
+                <img src="img/tournaments/tournament-valorant1.webp" alt="Valorant tournament">
+                <div class="flex">
+                    <div class="main-info">
+                        <span class="name">Valorant Spring Cup</span>
+                        <span class="code">#1093</span>
+                    </div>
+                    <div class="second-info">
+                        <span class="date">16/05/2022 - 03/06/2022</span>
+                        <span class="location">
+                            <img src="img/tournaments/white-location.png" alt="location marker">
+                            <a href="./venues.html#europa">London</a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="teams">
+                    <div class="heading">
+                        <span class="info-team">Team:</span>
+                        <span class="info-player">Players:</span>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#fnatic"><span class="team">Fnatic</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#dj">DJ</a></li>
+                            <li><a href="./players.html#krimz">KRiMZ</a></li>
+                            <li><a href="./players.html#jw">JW</a></li>
+                            <li><a href="./players.html#flusha">flusha</a></li>
+                            <li><a href="./players.html#ohaiyo">Ohaiyo</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#newbee"><span class="team">Newbee</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#kaka">KaKa</a></li>
+                            <li><a href="./players.html#kpii">kpii</a></li>
+                            <li><a href="./players.html#mu">Mu</a></li>
+                            <li><a href="./players.html#hao">Hao</a></li>
+                            <li><a href="./players.html#sccc">Sccc</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#faze"><span class="team">FaZe Clan</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#rain">rain</a></li>
+                            <li><a href="./players.html#karrigan">karrigan</a></li>
+                            <li><a href="./players.html#niko">NiKo</a></li>
+                            <li><a href="./players.html#olofmeister">olofmeister</a></li>
+                            <li><a href="./players.html#guardian">GuardiaN</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </article>
+        </section>
+
+        <!--tournament valorant 2-->
+        <a class="anchor" id="valorant-summer-cup"></a>
+
+        <section class="future valorant">
+            <article>
+                <img src="img/tournaments/tournament-valorant2.webp" alt="Valorant tournament">
+                <div class="flex">
+                    <div class="main-info">
+                        <span class="name">Valorant Summer Cup</span>
+                        <span class="code">#2846</span>
+                    </div>
+                    <div class="second-info">
+                        <span class="date">01/07/2022 - 16/07/2022</span>
+                        <span class="location">
+                            <img src="img/tournaments/white-location.png" alt="location marker">
+                            <a href="./venues.html#cina">Pechino</a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="teams">
+                    <div class="heading">
+                        <span class="info-team">Team:</span>
+                        <span class="info-player">Players:</span>
+                    </div>
+
+                    <div class="team-box">
+                        <a href="./players.html#fnatic"><span class="team">Fnatic</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#dj">DJ</a></li>
+                            <li><a href="./players.html#krimz">KRiMZ</a></li>
+                            <li><a href="./players.html#jw">JW</a></li>
+                            <li><a href="./players.html#flusha">flusha</a></li>
+                            <li><a href="./players.html#ohaiyo">Ohaiyo</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#faze"><span class="team">FaZe Clan</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#rain">rain</a></li>
+                            <li><a href="./players.html#karrigan">karrigan</a></li>
+                            <li><a href="./players.html#niko">NiKo</a></li>
+                            <li><a href="./players.html#olofmeister">olofmeister</a></li>
+                            <li><a href="./players.html#guardian">GuardiaN</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#team-liquid"><span class="team">Team Liquid</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#mind_control">MinD_ContRol</a></li>
+                            <li><a href="./players.html#kuroky">KuroKy</a></li>
+                            <li><a href="./players.html#gh">GH</a></li>
+                            <li><a href="./players.html#miracle-">Miracle-</a></li>
+                            <li><a href="./players.html#matumbaman">Matumbaman</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+        <!-- sections of lol tournaments-->
+        <a class="anchor" id="lol-tournament"></a>
+
+        <!--tournament lol 3-->
+        <a class="anchor" id="lol-mid-spring-cup"></a>
+
+        <section class="current lol">
+            <article>
+                <img src="img/tournaments/tournament-lol1.webp" alt="League of Legends tournament">
+                <div class="flex">
+                    <div class="main-info">
+                        <span class="name">LoL Mid-Spring Cup</span>
+                        <span class="code">#2538</span>
+                    </div>
+                    <div class="second-info">
+                        <span class="date">20/05/2022 - 10/06/2022</span>
+                        <span class="location">
+                            <img src="img/tournaments/white-location.png" alt="location marker">
+                            <a href="./venues.html#italia">Milan</a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="teams">
+                    <div class="heading">
+                        <span class="info-team">Team:</span>
+                        <span class="info-player">Players:</span>
+                    </div>
+
+                    <div class="team-box">
+                        <a href="./players.html#astralis"><span class="team">Astralis</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#xyp9x">Xyp9x</a></li>
+                            <li><a href="./players.html#dupreeh">dupreeh</a></li>
+                            <li><a href="./players.html#gla1ve">gla1ve</a></li>
+                            <li><a href="./players.html#dev1ce">dev1ce</a></li>
+                            <li><a href="./players.html#magisk">Magisk</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#team-liquid"><span class="team">Team Liquid</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#mind_control">MinD_ContRol</a></li>
+                            <li><a href="./players.html#kuroky">KuroKy</a></li>
+                            <li><a href="./players.html#gh">GH</a></li>
+                            <li><a href="./players.html#miracle-">Miracle-</a></li>
+                            <li><a href="./players.html#matumbaman">Matumbaman</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#virtus-pro"><span class="team">Virtus.pro</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#noone">Noone</a></li>
+                            <li><a href="./players.html#solo">Solo</a></li>
+                            <li><a href="./players.html#ramzes666">RAMZES666</a></li>
+                            <li><a href="./players.html#9pasha">9pasha</a></li>
+                            <li><a href="./players.html#rodjer">RodjER</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!--tournament lol 4-->
+        <a class="anchor" id="lol-seasonal-cup"></a>
+
+        <section class="future lol">
+            <article>
+                <img src="img/tournaments/tournament-lol2.webp" alt="League of Legends tournament">
+                <div class="flex">
+                    <div class="main-info">
+                        <span class="name">LoL Seasonal Cup</span>
+                        <span class="code">#7721</span>
+                    </div>
+                    <div class="second-info">
+                        <span class="date">15/06/2022 - 15/07/2022</span>
+                        <span class="location">
+                            <img src="img/tournaments/white-location.png" alt="location marker">
+                            <a href="./venues.html#cina">Shanghai</a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="teams">
+                    <div class="heading">
+                        <span class="info-team">Team:</span>
+                        <span class="info-player">Players:</span>
+                    </div>
+
+                    <div class="team-box">
+                        <a href="./players.html#astralis"><span class="team">Astralis</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#xyp9x">Xyp9x</a></li>
+                            <li><a href="./players.html#dupreeh">dupreeh</a></li>
+                            <li><a href="./players.html#gla1ve">gla1ve</a></li>
+                            <li><a href="./players.html#dev1ce">dev1ce</a></li>
+                            <li><a href="./players.html#magisk">Magisk</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#team-liquid"><span class="team">Team Liquid</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#mind_control">MinD_ContRol</a></li>
+                            <li><a href="./players.html#kuroky">KuroKy</a></li>
+                            <li><a href="./players.html#gh">GH</a></li>
+                            <li><a href="./players.html#miracle-">Miracle-</a></li>
+                            <li><a href="./players.html#matumbaman">Matumbaman</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#virtus-pro"><span class="team">Virtus.pro</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#noone">Noone</a></li>
+                            <li><a href="./players.html#solo">Solo</a></li>
+                            <li><a href="./players.html#ramzes666">RAMZES666</a></li>
+                            <li><a href="./players.html#9pasha">9pasha</a></li>
+                            <li><a href="./players.html#rodjer">RodjER</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+        <!-- sections of fortnite tournaments-->
+        <a class="anchor" id="fortnite-tournament"></a>
+
+        <!--tournament fortnite 5-->
+        <a class="anchor" id="fortnite-s3-duo-cup"></a>
+
+        <section class="current fortnite">
+            <article>
+                <img src="img/tournaments/tournament-fortnite1.webp" alt="Fortnite tournament">
+                <div class="flex">
+                    <div class="main-info">
+                        <span class="name">Fortnite S3 Duo Cup</span>
+                        <span class="code">#5924</span>
+                    </div>
+                    <div class="second-info">
+                        <span class="date">25/05/2022 - 5/06/2022</span>
+                        <span class="location">
+                            <img src="img/tournaments/white-location.png" alt="location marker">
+                            <a href="./venues.html#america">New York</a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="teams">
+                    <div class="heading">
+                        <span class="info-team">Team:</span>
+                        <span class="info-player">Players:</span>
+                    </div>
+
+                    <div class="team-box">
+                        <a href="./players.html#natus-vincere"><span class="team">Natus Vincere</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#s1mple">s1mple</a></li>
+                            <li><a href="./players.html#electronic">electronic</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#evil-geniuses"><span class="team">Evil Geniuses</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#sumail">SumaiL</a></li>
+                            <li><a href="./players.html#universe">UNiVeRsE</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#fnatic"><span class="team">Fnatic</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#krimz">KRiMZ</a></li>
+                            <li><a href="./players.html#flusha">flusha</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#astralis"><span class="team">Astralis</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#gla1ve">gla1ve</a></li>
+                            <li><a href="./players.html#dev1ce">dev1ce</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#faze"><span class="team">FaZe Clan</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#karrigan">karrigan</a></li>
+                            <li><a href="./players.html#guardian">GuardiaN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!--tournament fortnite 6-->
+        <a class="anchor" id="fortnite-trio-cup"></a>
+
+        <section class="future fortnite">
+            <article>
+                <img src="img/tournaments/tournament-fortnite2.webp" alt="Fortnite tournament">
+                <div class="flex">
+                    <div class="main-info">
+                        <span class="name">Fortnite Trio Cup</span>
+                        <span class="code">#8920</span>
+                    </div>
+                    <div class="second-info">
+                        <span class="date">16/08/2022 - 30/08/2022</span>
+                        <span class="location">
+                            <img src="img/tournaments/white-location.png" alt="location marker">
+                            <a href="./venues.html#corea-del-sud">Pusan</a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="teams">
+                    <div class="heading">
+                        <span class="info-team">Team:</span>
+                        <span class="info-player">Players:</span>
+                    </div>
+
+                    <div class="team-box">
+                        <a href="./players.html#astralis"><span class="team">Astralis</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#xyp9x">Xyp9x</a></li>
+                            <li><a href="./players.html#dupreeh">dupreeh</a></li>
+                            <li><a href="./players.html#gla1ve">gla1ve</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#team-liquid"><span class="team">Team Liquid</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#mind_control">MinD_ContRol</a></li>
+                            <li><a href="./players.html#kuroky">KuroKy</a></li>
+                            <li><a href="./players.html#gh">GH</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#virtus-pro"><span class="team">Virtus.pro</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#noone">Noone</a></li>
+                            <li><a href="./players.html#solo">Solo</a></li>
+                            <li><a href="./players.html#ramzes666">RAMZES666</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#evil-geniuses"><span class="team">Evil Geniuses</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#universe">UNiVeRsE</a></li>
+                            <li>Arteezy</li>
+                            <li>Fear</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!--tournament fortnite 7-->
+        <a class="anchor" id="fortnite-zero-build-cup"></a>
+
+        <section class="past fortnite">
+            <article>
+                <img src="img/tournaments/tournament-fortnite3.webp" alt="Fortnite tournament">
+                <div class="flex">
+                    <div class="main-info">
+                        <span class="name">Fortnite zero-build Cup</span>
+                        <span class="code">#5419</span>
+                    </div>
+                    <div class="second-info">
+                        <span class="date">03/05/2022 - 13/05/2022</span>
+                        <span class="location">
+                            <img src="img/tournaments/white-location.png" alt="location marker">
+                            <a href="./venues.html#europa">Copenaghen</a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="teams">
+                    <div class="heading">
+                        <span class="info-team">Team:</span>
+                        <span class="info-player">Players:</span>
+                    </div>
+
+                    <div class="team-box">
+                        <a href="./players.html#fnatic"><span class="team">Fnatic</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#ohaiyo">Ohaiyo</a></li>
+                            <li><a href="./players.html#krimz">KRiMZ</a></li>
+                            <li><a href="./players.html#flusha">flusha</a></li>
+                            <li><a href="./players.html#jw">JW</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#newbee"><span class="team">Newbee</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#kaka">KaKa</a></li>
+                            <li><a href="./players.html#hao">Hao</a></li>
+                            <li><a href="./players.html#sccc">Sccc</a></li>
+                            <li><a href="./players.html#kpii">kpii</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#natus-vincere"><span class="team">Natus Vincere</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#electronic">electronic</a></li>
+                            <li>Boombl4</li>
+                            <li>Perfecto</li>
+                            <li>B1t</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+        <!-- sections of rl tournaments-->
+        <a class="anchor" id="rl-tournament"></a>
+
+        <!--tournament rl 8-->
+        <a class="anchor" id="rl-champions-cup"></a>
+
+        <section class="current rl">
+            <article>
+                <img src="img/tournaments/tournament-rl1.webp" alt="Rocket League tournament">
+                <div class="flex">
+                    <div class="main-info">
+                        <span class="name">RL Champions Cup</span>
+                        <span class="code">#0092</span>
+                    </div>
+                    <div class="second-info">
+                        <span class="date">25/05/2022 - 05/06/2022</span>
+                        <span class="location">
+                            <img src="img/tournaments/white-location.png" alt="location marker">
+                            <a href="./venues.html#europa">Dublin</a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="teams">
+                    <div class="heading">
+                        <span class="info-team">Team:</span>
+                        <span class="info-player">Players:</span>
+                    </div>
+
+                    <div class="team-box">
+                        <a href="./players.html#astralis"><span class="team">Astralis</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#xyp9x">Xyp9x</a></li>
+                            <li><a href="./players.html#dupreeh">dupreeh</a></li>
+                            <li><a href="./players.html#dev1ce">dev1ce</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#virtus-pro"><span class="team">Virtus.pro</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#noone">Noone</a></li>
+                            <li><a href="./players.html#ramzes666">RAMZES666</a></li>
+                            <li><a href="./players.html#9pasha">9pasha</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#team-liquid"><span class="team">Team Liquid</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#mind_control">MinD_ContRol</a></li>
+                            <li><a href="./players.html#matumbaman">Matumbaman</a></li>
+                            <li><a href="./players.html#gh">GH</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#newbee"><span class="team">Newbee</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#kaka">KaKa</a></li>
+                            <li><a href="./players.html#kpii">kpii</a></li>
+                            <li><a href="./players.html#hao">Hao</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!--tournament rl 9-->
+        <a class="anchor" id="rl-master-cup"></a>
+
+        <section class="future rl">
+            <article>
+                <img src="img/tournaments/tournament-rl2.webp" alt="Rocket League tournament">
+                <div class="flex">
+                    <div class="main-info">
+                        <span class="name">RL Master Cup</span>
+                        <span class="code">#6820</span>
+                    </div>
+                    <div class="second-info">
+                        <span class="date">15/08/2022 - 30/08/2022</span>
+                        <span class="location">
+                            <img src="img/tournaments/white-location.png" alt="location marker">
+                            <a href="./venues.html#america">Miami</a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="teams">
+                    <div class="heading">
+                        <span class="info-team">Team:</span>
+                        <span class="info-player">Players:</span>
+                    </div>
+
+                    <div class="team-box">
+                        <a href="./players.html#fnatic"><span class="team">Fnatic</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#krimz">KRiMZ</a></li>
+                            <li><a href="./players.html#jw">JW</a></li>
+                            <li><a href="./players.html#dj">DJ</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#team-liquid"><span class="team">Team Liquid</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#mind_control">MinD_ContRol</a></li>
+                            <li><a href="./players.html#kuroky">KuroKy</a></li>
+                            <li><a href="./players.html#miracle-">Miracle-</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#virtus-pro"><span class="team">Virtus.pro</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#noone">Noone</a></li>
+                            <li><a href="./players.html#solo">Solo</a></li>
+                            <li><a href="./players.html#ramzes666">RAMZES666</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#faze"><span class="team">FaZe Clan</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#rain">rain</a></li>
+                            <li><a href="./players.html#niko">NiKo</a></li>
+                            <li><a href="./players.html#karrigan">karrigan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!--tournament rl 10-->
+        <a class="anchor" id="rl-mid-spring-cup"></a>
+
+        <section class="past rl">
+            <article>
+                <img src="img/tournaments/tournament-rl3.webp" alt="Rocket League tournament">
+                <div class="flex">
+                    <div class="main-info">
+                        <span class="name">RL Mid-Spring Cup</span>
+                        <span class="code">#8103</span>
+                    </div>
+                    <div class="second-info">
+                        <span class="date">27/04/2022 - 07/05/2022</span>
+                        <span class="location">
+                            <img src="img/tournaments/white-location.png" alt="location marker">
+                            <a href="./venues.html#corea-del-sud">Seul</a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="teams">
+                    <div class="heading">
+                        <span class="info-team">Team:</span>
+                        <span class="info-player">Players:</span>
+                    </div>
+
+                    <div class="team-box">
+                        <a href="./players.html#evil-geniuses"><span class="team">Evil Geniuses</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#universe">UNiVeRsE</a></li>
+                            <li>ppd</li>
+                            <li>Arteezy</li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#newbee"><span class="team">Newbee</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#hao">Hao</a></li>
+                            <li><a href="./players.html#mu">Mu</a></li>
+                            <li><a href="./players.html#kpii">kpii</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#virtus-pro"><span class="team">Virtus.pro</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#9pasha">9pasha</a></li>
+                            <li><a href="./players.html#noone">Noone</a></li>
+                            <li><a href="./players.html#rodjer">RodjER</a></li>
+                        </ul>
+                    </div>
+                    <div class="team-box">
+                        <a href="./players.html#astralis"><span class="team">Astralis</span></a>
+                        <ul class="players">
+                            <li><a href="./players.html#dev1ce">dev1ce</a></li>
+                            <li><a href="./players.html#magisk">Magisk</a></li>
+                            <li><a href="./players.html#xyp9x">Xyp9x</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="social">
+            <a href="https://it-it.facebook.com/its.ictpiemonte/" target="_blank">
+                <img src="img/facebook.svg" alt="facebook" title="Facebook ITS ICT Piemonte" />
+            </a>
+            <a href="https://www.instagram.com/its_ict_pie/" target="_blank">
+                <img src="img/instagram.svg " alt="instagram" title="Instagram ITS ICT Piemonte" />
+            </a>
+            <a href="https://www.youtube.com/channel/UCKv0byOTHfBYrIxRSuA1Zag" target="_blank">
+                <img src="img/youtube.svg" alt="youtube" title="Youtube ITS ICT Piemonte" />
+            </a>
+        </div>
+
+        <p class="copyright">&copy; 2022 ITS ICT Piemonte<br><br>Brustolon - Demichelis - Galantino - Trabbia</p>
+    </footer>
+
+    <!--end of body-->
+</body>
+
+</html>
