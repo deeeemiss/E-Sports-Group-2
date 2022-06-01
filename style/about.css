@@ -1,182 +1,319 @@
-@import url("https://use.typekit.net/kwh0nqd.css");
+/**
+* tournaments.css
+*
+* Style for the tournaments.html page
+*/
 
-/********************
-Page Content
-********************/
-
-
-/*animation*/
-/*
-a.title {
-  color: #576ca8;
-  letter-spacing: -3px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  font-family: roc-grotesk-extrawide, sans-serif;
-  font-weight: 400;
-  animation: 3s blinker linear infinite;
-  -webkit-animation: 3s blinker linear infinite;
-  -moz-animation: 3s blinker linear infinite;
-  text-decoration: none;
+/**
+ * Style for secondary navigation
+*/
+input {
+    visibility: hidden;
 }
 
-@-moz-keyframes blinker {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes blinker {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes blinker {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-}*/
-
-/*end animation*/
-
-form {/* 
-  border: 2px solid #576ca8;
-  border-radius: 20px; */
-  margin-top: 20px;
-  padding: 10px 0;
-  font-size: 1.2em;
-}
-
-form label,
-input,
-span.form-part {
-  display: inline-block;
-  width: 110px;
-  margin: 10px;
-  text-align: center;
-}
-
-form label {
-  color: #576ca8;
-  font-size: 15px;
-}
-
-form #input-join-us {
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-}
-
-form #nationality, form #eyeColor, form #hairColor, form .desired-tournaments{
-  display: inline-block;
-  width: 140px;
-  margin: 10px;
-}
-
-form.select-games{
-  display: inline-block;
-  width: 140px;
-  margin: 10px;
-}
-
-fieldset {
-  margin: 10px 20px 20px 20px;
-  border-radius: 5px;
-}
-
-
-
-legend.form-part {
-  margin-left: 10px;
-  padding: 0 3px;
-}
-
-.form-part,
-li fieldset label {
-  color: #576ca8;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.textarea-biography{
-  display: inline-block;
-  width: 180px;
-  height: 60px;
-  resize: none;
-}
-
-.textarea-biography,
-.form-biography{
-  vertical-align: middle;
-}
-
-footer {
-  margin-top: 20px;
-}
-
-/*****************
-Responsive page content
-*****************/
-@media screen and (min-width: 768px) {
-  /*a.title {
-    color: #576ca8;
-    letter-spacing: -3px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    font-family: roc-grotesk-extrawide, sans-serif;
-    font-weight: 400;
-  }*/
-
-  form {
-    border: 2px solid #576ca8;
-    border-radius: 20px;
-    width: 400px;
-    margin-top: 20px;
-    padding: 10px 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  form label,
-  input {
+#secondary-menu ul {
     display: inline-block;
-    width: 140px;
-    margin: 10px;
+    vertical-align: top;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.current-menu label,
+.past-menu label,
+.future-menu label,
+.all-menu label {
+    cursor: pointer;
+}
+
+#secondary-menu ul li,
+#secondary-menu .tournament-game {
+    display: inline-block;
+    padding: 10px;
+    font-family: roc-grotesk-extrawide, sans-serif;
+}
+
+#secondary-menu ul li:last-child {
+    display: block;
+}
+
+#current:checked~#secondary-menu ul.period li:not(.current-menu) {
+    opacity: 0.2;
+}
+
+#past:checked~#secondary-menu ul.period li:not(.past-menu) {
+    opacity: 0.2;
+}
+
+#future:checked~#secondary-menu ul.period li:not(.future-menu) {
+    opacity: 0.2;
+}
+
+#all:checked~#secondary-menu ul.period li:not(.all-menu) {
+    opacity: initial;
+}
+
+#current:checked~main section:not(.current) {
+    display: none;
+}
+
+#past:checked~main section:not(.past) {
+    display: none;
+}
+
+#future:checked~main section:not(.future) {
+    display: none;
+}
+
+#all:checked~main section {
+    display: block;
+}
+
+#secondary-menu .games ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#secondary-menu .games {
+    background-color: #f5f3f5;
+}
+
+#secondary-menu .games ul li {
+    display: inline-block;
+    padding: 0;
+}
+
+#secondary-menu img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -110px;
+    visibility: hidden;
+}
+
+/**
+ * Style for the content of tournaments page
+*/
+main section article {
+    margin: 0 15px 20px 15px;
+    border: 1px solid #302b27;
+    border-radius: 5px;
+    background-color: #302b27;
+}
+
+article .heading,
+article .team-box {
+    background-color: #f5f3f5;
+}
+
+article img {
+    max-width: 100%;
+}
+
+/**
+ * Info-box of the tournament 
+*/
+.main-info {
+    padding: 5px;
+    color: #f5f3f5;
+    background-color: #302b27;
+}
+
+.main-info .name,
+.main-info .code {
+    display: block;
+    font-weight: bold;
+    font-family: roc-grotesk-extrawide, sans-serif;
+}
+
+.main-info .code {
+    margin-top: 3px;
+    padding-bottom: 4px;
+}
+
+.second-info {
+    color: #f5f3f5;
+    background-color: #302b27;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 7px;
+    border-bottom: 1px solid black;
+}
+
+.second-info .location img {
+    width: 15px;
+    height: 15px;
+}
+
+.second-info .location a {
+    color: white;
+}
+
+/**
+ * Collapsible team-box
+*/
+#secondary-menu {
+    position: sticky;
+    top: -73px;
+}
+
+.all-teams {
+    background-color: #f5f3f5;
+    width: 100%;
+    padding: 10px;
+    font-family: roc-grotesk-extrawide, sans-serif;
+    margin-bottom: 20px;
+}
+
+.teams a {
+    color: #302b27;
+}
+
+.teams,
+#collapse-team,
+.hide {
+    display: none;
+}
+
+.collapse {
+    padding: 7px;
+    background-color: #f5f3f5;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#collapse-team:checked~#secondary-menu div.all-teams .hide,
+#collapse-team:checked~main section article .teams {
+    display: initial;
+    border: none;
+}
+
+#collapse-team:checked~.collapse {
+    border-radius: 0;
+}
+
+#collapse-team:checked~#secondary-menu div.all-teams .show {
+    display: none;
+}
+
+/**
+ * Team-box of the tournament
+*/
+.heading {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    border-bottom: 1px solid #302b27;
+}
+
+.team-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1px solid #302b27;
+}
+
+.team-box .team {
+    font-weight: bold;
+}
+
+article .team-box:last-child {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.team-box ul li {
     text-align: center;
-  }
+    padding: 2px;
+}
 
-  form label {
-    color: #576ca8;
-    font-size: 13px;
-  }
+/**
+ * Desktop tournament page
+*/
+@media screen and (min-width: 992px) {
 
-  form #input-join-us {
-    font-size: 13px;
-  }
+    .games ul {
+        width: 20%;
+    }
+
+    .all-teams {
+        display: none;
+    }
+
+    a.anchor {
+        top: -80px;
+    }
+
+    article img {
+        width: 40%;
+    }
+
+    article {
+        position: relative;
+        font-size: larger;
+    }
+
+    article .flex {
+        width: 40%;
+    }
+
+    article .main-info {
+        vertical-align: top;
+        padding: 10px 0 0 5px;
+        padding: 5px;
+    }
+
+    article .name {
+        padding-bottom: 10px;
+    }
+
+    article .second-info {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border: none;
+        width: 100%;
+    }
+
+    main section article .teams {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        top: 0;
+        left: 40%;
+        width: 60%;
+        height: 100%;
+        }
+
+    .collapse {
+        border-radius: 0px;
+    }
+
+    article .heading {
+        display: none;
+    }
+
+    .team-box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: none;
+
+    }
+
+    article .team-box:last-child {
+        border-radius: 0px;
+    }
+
+    #secondary-menu {
+        z-index: 2;
+    }
 }
