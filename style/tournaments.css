@@ -258,7 +258,7 @@ article .team-box:last-child {
 
     article {
         position: relative;
-        z-index: -1;
+        z-index: 1;
         font-size: larger;
     }
 
@@ -284,7 +284,7 @@ article .team-box:last-child {
         width: 100%;
     }
 
-    .teams {
+    main section article .teams {
         display: flex;
         position: absolute;
         flex-direction: row;
@@ -292,7 +292,7 @@ article .team-box:last-child {
         left: 40%;
         width: 60%;
         height: 100%;
-    }
+        }
 
     .collapse {
         border-radius: 0px;
