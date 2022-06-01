@@ -57,6 +57,7 @@ In the project folder you can find 9 files and 2 folders:
 ## Browser compatibility
  - Chrome v102.0.5005.63: tested and fully compatible
  - Firefox v100.0.2: tested and fully compatible
+ - Edge v102.0.1245.30: tested and fully compatible
  - Opera v87.0.4390.30: tested and fully compatible
  - Brave v1.39.111: tested and fully compatible
  - Safari v15.5: tested and fully compatible
@@ -74,3 +75,4 @@ In the project folder you can find 9 files and 2 folders:
 
 ## Changelog and version history
    * Esports - An Esports league website v1.0
+   * Esports - An Esports league website v1.1: bug fixes and improvements
